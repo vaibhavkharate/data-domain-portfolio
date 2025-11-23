@@ -1,0 +1,4 @@
+- [x] Move images from app/data/Images/ to public/Images/
+- [x] Update image paths in app/sections/Projects.tsx
+- [ ] Update image path in app/sections/Hero.tsx
+- [ ] Test the site to confirm images load
