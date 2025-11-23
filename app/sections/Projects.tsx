@@ -99,6 +99,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
             src={project.image}
             alt={`${project.title} screenshot`}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="/Images/fallback.jpg"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             onError={() => setImgError(true)}
           />
@@ -107,6 +111,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
             src="/Images/fallback.jpg"
             alt="Fallback image"
             fill
+            sizes="100vw"
+            loading="lazy"
             className="object-cover"
           />
         )}
