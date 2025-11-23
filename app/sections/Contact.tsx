@@ -29,66 +29,42 @@ const useContactForm = () => {
     []
   );
 
-  const handleSubmit = useCallback(
-    async (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
+        const handleSubmit = useCallback(
+        async (e: React.FormEvent<HTMLFormElement>) => {
+          e.preventDefault();
 
-      // Client-side validation for required fields
-      if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-        setErrorDetails("Please fill in all required fields.");
-        setStatus("error");
-        return;
-      }
+          if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+            setErrorDetails("Please fill in all required fields.");
+            setStatus("error");
+            return;
+          }
 
-      if (!WEB3FORMS_ACCESS_KEY) {
-        setErrorDetails("Web3Forms access key is missing.");
-        setStatus("error");
-        return;
-      }
-
-      setStatus("loading");
-      setErrorDetails(null);
-
-      const payload = {
-        access_key: WEB3FORMS_ACCESS_KEY,
-        name: formData.name,
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-        from_name: formData.name, // sender's name
-        reply_to: formData.email, // sender's email
-        to_email: "vaibhav.s.kharate@gmail.com", // receiver email hardcoded
-      };
-
-      try {
-        console.log("Sending form data to Web3Forms:", payload);
-        const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        });
-
-        console.log("Web3Forms response status:", response.status);
-
-        if (response.ok) {
-          setStatus("success");
-          setFormData({ name: "", email: "", subject: "", message: "" });
+          setStatus("loading");
           setErrorDetails(null);
-        } else {
-          const errorData = await response.json().catch(() => ({}));
-          const errorMsg = errorData.message || errorData.error || "Unknown error";
-          console.error("Web3Forms error response:", errorData);
-          setErrorDetails(errorMsg);
-          setStatus("error");
-        }
-      } catch (error: any) {
-        console.error("Error sending form:", error);
-        setErrorDetails(error.message || "Network error while sending form.");
-        setStatus("error");
-      }
-    },
-    [formData]
-  );
+
+          try {
+            const response = await fetch("/api/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+              setStatus("success");
+              setFormData({ name: "", email: "", subject: "", message: "" });
+            } else {
+              setStatus("error");
+              setErrorDetails(result.error || "Failed to send message.");
+            }
+          } catch (err: any) {
+            setStatus("error");
+            setErrorDetails("Network error while sending message.");
+          }
+        },
+        [formData]
+      );
 
   return { formData, status, errorDetails, handleChange, handleSubmit };
 };
@@ -127,7 +103,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/80 to-slate-950 -z-10" />
-
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -229,7 +205,7 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="John Doe"
+                  placeholder="Gaurav Sharma"
                 />
 
                 <FormInput
@@ -238,7 +214,7 @@ export default function Contact() {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  placeholder="gaurav@example.com"
                 />
 
                 <FormInput
@@ -282,7 +258,7 @@ const Card = ({ children, secondary = false }: any) => (
 
 const ContactRow = ({ icon, title, text, href }: ContactLink) => (
   <div className="flex items-start gap-4 group">
-    <div className="p-3 bg-blue-500/10 rounded-xl group-hover:bg-blue-500/20 transition-colors">
+    <div className="p-3 bg-blue-500/10 rounded-xl group-hover:bg-blue-500/20 transition-colors hover:shadow-[0_0_15px_rgba(59,130,246,0.7)]">
       {icon}
     </div>
     <div>
@@ -305,7 +281,7 @@ const ContactRow = ({ icon, title, text, href }: ContactLink) => (
 );
 
 const Tag = ({ text }: { text: string }) => (
-  <span className="px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-lg text-blue-300 text-sm font-medium">
+  <span className="px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-lg text-blue-300 text-sm font-medium transition-shadow hover:shadow-[0_0_15px_rgba(59,130,246,0.7)] cursor-default">
     {text}
   </span>
 );
