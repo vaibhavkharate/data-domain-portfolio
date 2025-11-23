@@ -171,8 +171,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             href={project.demo || "#"}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2 rounded-lg bg-slate-900/60 border border-slate-700 text-sm text-white
-                       hover:bg-blue-600 hover:border-blue-600 hover:shadow-md transition-all duration-200"
+            className="w-full py-3 bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 rounded-lg text-white font-semibold hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 flex items-center justify-center gap-2"
             aria-label={`${project.title} - View details`}
           >
             View Details
