@@ -68,7 +68,7 @@ export default function Footer() {
         {/* ---- Top Section ---- */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           {/* Branding */}
-          <FooterColumn title="VK.">
+          <FooterColumn title="VAIBHAV">
             <p className="text-gray-400 leading-relaxed">
               Data Analyst & Aspiring Data Engineer experienced in crafting 
               scalable dashboards, ETL workflows, and insight-driven solutions.
