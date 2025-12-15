@@ -73,7 +73,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-60"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
               </span>
-              Available for Opportunities
+              Open to Data Analyst Opportunities
             </div>
 
             {/* Name */}
@@ -98,7 +98,7 @@ export default function Hero() {
               transition={{ delay: 0.15 }}
               className="text-xl sm:text-2xl font-semibold text-slate-300"
             >
-              Data Analyst & Aspiring Data Engineer
+              Data Analyst
             </motion.h2>
 
             {/* Subtitle */}
@@ -109,8 +109,9 @@ export default function Hero() {
               transition={{ delay: 0.22 }}
               className="text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
-              Turning raw data into insightful dashboards, automated pipelines, and
-              scalable data solutions that drive decision-making.
+              Transforming raw data into actionable insights through SQL-driven analysis,
+              interactive Power BI dashboards, and business-focused reporting.
+
             </motion.p>
 
             {/* Buttons */}
@@ -155,9 +156,9 @@ export default function Hero() {
               className="flex flex-wrap gap-6 justify-center lg:justify-start text-slate-300 pt-3"
             >
               {[
-                { icon: Database, text: "SQL Expert" },
-                { icon: BarChart3, text: "Power BI" },
-                { icon: GitBranch, text: "ETL Pipelines" },
+                { icon: Database, text: "Advanced SQL" },
+                { icon: BarChart3, text: "Power BI Dashboards" },
+                { icon: GitBranch, text: "Data Analysis & Reporting" },
               ].map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-2 text-sm">
                   <Icon className="text-blue-400" size={18} aria-hidden="true" />
@@ -197,7 +198,7 @@ export default function Hero() {
               <div className="mt-4 text-center lg:text-right">
                 <p className="text-sm text-slate-300 font-medium">Vaibhav Kharate</p>
                 <p className="text-xs text-slate-500">
-                  Data Analyst • Aspiring Data Engineer
+                  Data Analyst
                 </p>
               </div>
             </motion.div>
