@@ -10,17 +10,12 @@ const SKILL_CATEGORIES = [
   {
     title: "Data Analytics",
     icon: BarChart3,
-    skills: ["Power BI", "Excel", "SQL", "DAX"],
+    skills: ["Power BI", "Excel", "SQL", "DAX", "Data Visualization","Exploratory Data Analysis"],
   },
   {
     title: "Programming",
     icon: Code2,
-    skills: ["Python", "Pandas", "NumPy"],
-  },
-  {
-    title: "Data Engineering",
-    icon: GitBranch,
-    skills: ["ETL Pipelines", "Data Modeling", "Snowflake", "Airflow"],
+    skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
   },
   {
     title: "Database Systems",
@@ -36,8 +31,7 @@ const SKILL_CATEGORIES = [
 
 const TECH_STACK = [
   "Power BI", "Python", "SQL", "Pandas", "NumPy", "DAX", "Excel",
-  "PostgreSQL", "MySQL", "Snowflake", "Airflow", "ETL",
-  "Git", "APIs",
+  "PostgreSQL", "MySQL","Git", "APIs"
 ];
 
 // ---------------------------------------------
@@ -99,7 +93,7 @@ export default function Skills() {
         {/* Skill Categories Grid */}
         <main
           role="list"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
         >
           {SKILL_CATEGORIES.map(({ title, icon: Icon, skills }) => (
             <article
