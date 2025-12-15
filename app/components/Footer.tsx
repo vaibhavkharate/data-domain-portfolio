@@ -70,8 +70,8 @@ export default function Footer() {
           {/* Branding */}
           <FooterColumn title="VAIBHAV">
             <p className="text-gray-400 leading-relaxed">
-              Data Analyst & Aspiring Data Engineer experienced in crafting 
-              scalable dashboards, ETL workflows, and insight-driven solutions.
+              Data Analyst skilled in SQL, Power BI, and Python, focused on data cleaning,
+              analysis, and building clear, insight-driven dashboards.
             </p>
           </FooterColumn>
 
