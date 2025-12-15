@@ -11,22 +11,21 @@ const STRENGTHS = [
   { icon: Database, label: "SQL" },
   { icon: Code2, label: "Python" },
   { icon: BarChart3, label: "Power BI" },
-  { icon: Brain, label: "Data Modeling" },
-  { icon: TrendingUp, label: "ETL Pipelines" },
-  { icon: Zap, label: "Cloud Basics" },
+  { icon: Brain, label: "Data Analysis" },
+  { icon: TrendingUp, label: "Business Insights" },
+  { icon: Zap, label: "Problem Solving" },
 ];
 
 const TECHNOLOGIES = [
   "Excel",
   "PostgreSQL",
   "MySQL",
-  "Snowflake",
-  "Airflow",
+  "Power BI",
   "Pandas",
   "NumPy",
   "DAX",
   "Git",
-  "API Handling",
+  "CSV / API Data",
 ];
 
 // Animation variants
@@ -101,16 +100,17 @@ export default function About() {
               </h3>
 
               <p className="text-gray-300 leading-relaxed mb-3">
-                I began my career in web development, building responsive and
-                interactive user interfaces. As I worked with real systems, I
-                developed a strong interest in understanding how data powers
-                decisions behind the scenes.
+                I started my career in web development, where I built responsive
+                and user-focused interfaces. While working on real-world
+                applications, I became increasingly interested in how data is
+                used to understand users and support business decisions.
               </p>
 
               <p className="text-gray-300 leading-relaxed">
-                Today, I specialize in transforming raw data into insights,
-                designing scalable data architectures, and developing analytics
-                workflows that help businesses make smarter decisions.
+                Over time, I transitioned my focus toward data analytics, where
+                I enjoy working with structured data, identifying patterns, and
+                translating numbers into clear insights that support
+                decision-making.
               </p>
             </motion.article>
 
@@ -125,10 +125,10 @@ export default function About() {
 
               <ul className="space-y-3 text-gray-300">
                 {[
-                  "Build dashboards and analytics solutions using Power BI and SQL",
-                  "Automate and optimize ETL pipelines for smooth workflows",
-                  "Design efficient data models for scalable cloud/data systems",
-                  "Perform data cleaning, transformation & analysis using Python",
+                  "Analyze structured datasets to answer business questions",
+                  "Create interactive dashboards and reports using Power BI",
+                  "Write SQL queries to extract, join, and analyze data",
+                  "Clean and prepare data using Python for accurate analysis",
                 ].map((task, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <span className="text-blue-400 text-xl">▹</span>
