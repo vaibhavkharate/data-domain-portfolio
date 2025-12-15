@@ -24,7 +24,7 @@ export default function Education() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-4"></div>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Academic foundation and industry-recognized Certifications
+            Academic foundation and relevant certifications supporting a career in data analytics
           </p>
         </div>
 
@@ -58,8 +58,8 @@ export default function Education() {
 
               <div className="bg-slate-800/50 rounded-xl p-4 mt-4">
                 <p className="text-gray-300 leading-relaxed">
-                  Built strong fundamentals in software development, databases, algorithms,
-                  cloud fundamentals, and modern engineering practices.
+                  Built strong fundamentals in databases, SQL, programming, data handling, and analytical 
+                  problem-solving through coursework and practical assignments.
                 </p>
               </div>
             </div>
@@ -80,11 +80,12 @@ export default function Education() {
             <div className="space-y-3">
               {[
                 'Data Analysis & Business Intelligence',
-                'ETL, Data Pipelines & Automation',
-                'Database Systems & SQL Optimization',
-                'Cloud Foundations (Oracle, Azure)',
-                'Python for Data & Automation',
-                'Web Development Fundamentals',
+                'SQL for Data Extraction & Analysis',
+                'Data Cleaning & Preparation',
+                'Python for Data Analysis (Pandas, NumPy)',
+                'Power BI & Data Visualization',
+                'Understanding Business Metrics & KPIs',
+                
               ].map((focus, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="text-blue-400 flex-shrink-0" size={20} />
@@ -95,8 +96,8 @@ export default function Education() {
 
             <div className="bg-slate-800/50 rounded-xl p-4 mt-6">
               <p className="text-gray-300 leading-relaxed">
-                Transitioned from web development to data analytics through hands-on projects,
-                certifications, and self-paced learning with real datasets and business scenarios.
+                Transitioned from web development to data analytics through hands-on projects, certifications, 
+                and practical analysis of real-world datasets and business scenarios.
               </p>
             </div>
           </div>
@@ -110,7 +111,7 @@ export default function Education() {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-white">Professional Certifications</h3>
-              <p className="text-gray-400">Validated expertise from recognized global platforms</p>
+              <p className="text-gray-400">Foundational certifications supporting database concepts and data analytics fundamentals</p>
             </div>
           </div>
 
@@ -132,7 +133,7 @@ export default function Education() {
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-gray-400 mb-4">Continuous learning through top online platforms:</p>
+            <p className="text-gray-400 mb-4">Continuous learning through structured courses and hands-on practice on platforms such as:</p>
             <div className="flex flex-wrap justify-center gap-4">
               {['Coursera', 'Udemy', 'Oracle Learning', 'LinkedIn Learning', 'YouTube'].map((platform) => (
                 <span
