@@ -33,8 +33,9 @@ const useProjectData = (): Project[] =>
       {
         title: "Bank Customer Churn Analysis",
         description:
-          "Predictive analytics project identifying churn factors with dashboards and risk scoring models.",
-        technologies: ["Python", "Pandas", "Power BI", "SQL"],
+          "Analyzed customer churn patterns to identify key risk factors using SQL and Python, and built interactive Power BI dashboards to support retention-focused decision-making.",
+        technologies: ["SQL", "Power BI", "Python", "MySQL", "Pandas"]
+,
         icon: Users,
         github: "https://github.com/vaibhavkharate/Bank-Customer-Analytics-Dashboard",
         demo: "https://app.powerbi.com/view?r=eyJrIjoiMDFhMzBiNjctNTdlYy00NDUyLWE2NTMtMDY4NTE1YWRhZjBmIiwidCI6IjM1NjFhYTFjLWI0NWEtNDg5Ni1hNTY4LTFlN2RkYWE3YjM5YiJ9",
@@ -42,10 +43,11 @@ const useProjectData = (): Project[] =>
         image: "/Images/project_pic/Bank_Customer_analysis.png",
       },
       {
-        title: "Sales Analysis Dashboard",
+        title: "Global Sales Analysis Dashboard",
         description:
-          "Comprehensive Power BI dashboard analyzing sales trends, revenue patterns, and customer behavior across multiple regions.",
-        technologies: ["Power BI", "DAX", "SQL", "Excel"],
+          "Developed a comprehensive Power BI dashboard to analyze sales performance, revenue trends, and regional customer behavior, enabling data-driven business insights.",
+        technologies: ["SQL", "Power BI", "Python", "MySQL", "Pandas"]
+,
         icon: BarChart3,
         github: "https://github.com/vaibhavkharate/global-sales-analysis-dashboard",
         demo: "https://app.powerbi.com/view?r=eyJrIjoiNGFjMmZhMzgtZmYwMS00YWY2LWFhODgtOTFhM2NjOTAwN2EwIiwidCI6IjM1NjFhYTFjLWI0NWEtNDg5Ni1hNTY4LTFlN2RkYWE3YjM5YiJ9&embedImagePlaceholder=true",
@@ -55,8 +57,8 @@ const useProjectData = (): Project[] =>
       {
         title: "Customer Shopping Behaviour Analysis",
         description:
-          "Advanced SQL project using joins, CTEs, and window functions to analyze retail shopping patterns.",
-        technologies: ["SQL", "PostgreSQL", "MySQL"],
+          "Performed in-depth retail data analysis using advanced SQL techniques including joins, CTEs, and window functions to uncover customer shopping behavior and trends.",
+        technologies: ["SQL", "PostgreSQL", "Power BI", "Python", "Pandas"],
         icon: Database,
         github: "https://github.com/vaibhavkharate/customer-shopping-behavior-analysis-dashboard",
         demo: "https://app.fabric.microsoft.com/view?r=eyJrIjoiMmEzZmRlYzYtMmE1NS00YzA5LTliNzgtNzYzY2IyOWNmYjk4IiwidCI6IjM1NjFhYTFjLWI0NWEtNDg5Ni1hNTY4LTFlN2RkYWE3YjM5YiJ9",
@@ -180,7 +182,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             className="w-full py-3 bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 rounded-lg text-white font-semibold hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 flex items-center justify-center gap-2"
             aria-label={`${project.title} - View details`}
           >
-            View Details
+            View Dashboard
             <ExternalLink size={16} />
           </a>
         </div>
@@ -222,7 +224,8 @@ export default function Projects() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-4" />
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Real-world data projects showcasing analytics, engineering, and visualization skills.
+          Real-world data analytics projects showcasing SQL analysis, Power BI dashboards,
+          and data-driven business insights.
           </p>
         </header>
 
