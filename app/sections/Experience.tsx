@@ -70,16 +70,16 @@ export default function Experience() {
   const experiences = useMemo<ExperienceItem[]>(
     () => [
       {
-        title: "Frontend Development Intern",
+        title: "Data Analytics Intern",
         organization: "KaVaaVi Technologies Pvt. Ltd., Nagpur",
         period: "Dec, 2024 - March, 2025",
         type: "Internship",
         icon: Briefcase,
         highlights: [
-          "Gained hands-on experience in front-end and back-end technologies.",
-          "Improved full-stack skills while working in a professional team environment.",
-          "Collaborated on real-world projects using React, Node.js, and databases.",
-          "Maintained confidentiality and contributed effectively throughout the internship.",
+          "Worked with structured datasets to understand data flow, validation, and transformation across systems",
+          "Collaborated with product and development teams to translate business requirements into data-driven insights.",
+          "Assisted in preparing basic reports and dashboards to track application usage and performance trends.",
+          "Applied SQL queries and data exploration techniques to extract meaningful information from datasets.",
         ],
       },
       {
@@ -89,10 +89,10 @@ export default function Experience() {
         type: "Internship",
         icon: Code2,
         highlights: [
-          "Built full-stack modules with frontend + backend integration.",
-          "Developed RESTful APIs and responsive UI components.",
-          "Collaborated to improve project structure and maintainability.",
-          "Contributed to database operations and workflow design.",
+          "Assisted in developing application modules involving frontend, backend, and database interaction.",
+          "Worked with REST APIs and relational databases to retrieve and manage structured data.",
+          "Supported data handling tasks such as validation, storage, and query-based retrieval.",
+          "Improved understanding of how business data flows through applications.",
         ],
       },
       {
@@ -102,10 +102,10 @@ export default function Experience() {
         type: "Internship",
         icon: Code2,
         highlights: [
-          "Executed real-world data analysis and predictive modeling projects.",
-          "Applied machine learning algorithms, preprocessing, and evaluation techniques.",
-          "Developed practical solutions to complex problems in data science.",
-          "Enhanced skills in Python, scikit-learn, and data visualization.",
+          "Performed exploratory data analysis on structured datasets to identify trends and patterns.",
+          "Cleaned, prepared, and analyzed data using Python libraries.",
+          "Applied basic machine learning techniques to support data-driven insights.",
+          "Strengthened foundations in data analysis, visualization, and analytical thinking.",
         ],
       },
       {
@@ -115,25 +115,13 @@ export default function Experience() {
         type: "Internship",
         icon: Briefcase,
         highlights: [
-          "Designed and developed responsive web pages",
-          "Utilized HTML, CSS, and JavaScript technologies",
-          "Gained foundational frontend development skills",
-          "Collaborated with team members on web projects",
+          "Designed responsive web pages with attention to usability and layout structure.",
+          "Worked with HTML, CSS, and JavaScript to present structured information clearly.",
+          "Developed an understanding of how data and content are presented to users.",
+          "Collaborated with team members to meet project requirements and timelines.",
         ],
       },
-      {
-        title: "Self-Learning & Skill Building",
-        organization: "Personal Journey",
-        period: "2023 - Present",
-        type: "Continuous Learning",
-        icon: TrendingUp,
-        highlights: [
-          "Completed 10+ courses in SQL, Python, Power BI, Oracle Cloud, and Data Engineering.",
-          "Built 5+ end-to-end data analytics, BI, and ETL automation projects.",
-          "Mastered ETL pipeline development, data modeling, and dashboard design.",
-          "Improved problem-solving through hands-on practice.",
-        ],
-      },
+     
       {
         title: "Data Analytics & BI Projects",
         organization: "Freelance & Personal Projects",
@@ -141,25 +129,13 @@ export default function Experience() {
         type: "Project Work",
         icon: Code2,
         highlights: [
-          "Built interactive Power BI dashboards with advanced DAX.",
-          "Processed large datasets using Python (Pandas, NumPy).",
-          "Wrote optimized SQL queries, joins, CTEs, and windows functions.",
-          "Performed data cleaning, validation, and reporting.",
+          "Built interactive Power BI dashboards to track key metrics and business insights.",
+          "Analyzed structured datasets using Python (Pandas, NumPy) for trend identification.",
+          "Wrote efficient SQL queries using joins, CTEs, and aggregations.",
+          "Performed data cleaning, validation, and reporting to support decision-making.",
         ],
       },
-      {
-        title: "Technical Mastery Track",
-        organization: "Hands-on Practical Learning",
-        period: "2023 - Present",
-        type: "Skill Development",
-        icon: Award,
-        highlights: [
-          "Advanced SQL: Window functions, CTEs, query optimization.",
-          "Python for Data: Pandas, NumPy, automation scripts.",
-          "Power BI: DAX, star schemas, interactive UX.",
-          "Data Engineering: ETL workflows, Airflow, Snowflake basics.",
-        ],
-      },
+     
     ],
     []
   );
@@ -167,8 +143,8 @@ export default function Experience() {
   const stats = useMemo(
     () => [
       { icon: Briefcase, label: "Internships Completed", value: "4" },
-      { icon: Award, label: "Certifications", value: "3+" },
-      { icon: Code2, label: "Projects Completed", value: "10+" },
+      { icon: Award, label: "Certifications", value: "3" },
+      { icon: Code2, label: "Projects Completed", value: "6-8" },
     ],
     []
   );
@@ -189,7 +165,7 @@ export default function Experience() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-4"></div>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            A growing career shaped by real-world internships, data projects, and continuous learning
+            A growing profile built through internships, data analysis projects, and continuous skill development
           </p>
         </div>
 
