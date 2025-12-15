@@ -154,12 +154,13 @@ export default function Contact() {
                 </h3>
 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  I'm open to opportunities in data analysis, business intelligence,
-                  and data engineering.
+                  I’m actively seeking entry-level opportunities where I can apply
+                  my skills in SQL, Power BI, and Python to analyze data and support
+                  business decision-making.
                 </p>
 
                 <div className="flex flex-wrap gap-3">
-                  {["Data Analytics", "Business Intelligence", "Data Engineering"].map(
+                  {["Data Analytics", "Business Intelligence", "Reporting & Insights"].map(
                     (tag) => (
                       <Tag key={tag} text={tag} />
                     )
@@ -205,7 +206,7 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Gaurav Sharma"
+                  placeholder="Your Name"
                 />
 
                 <FormInput
@@ -214,7 +215,7 @@ export default function Contact() {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="gaurav@example.com"
+                  placeholder="your@example.com"
                 />
 
                 <FormInput
