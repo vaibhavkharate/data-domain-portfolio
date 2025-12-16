@@ -8,24 +8,41 @@ import { memo } from "react";
 // ---------------------------------------------
 const SKILL_CATEGORIES = [
   {
-    title: "Data Analytics",
+    title: "Data Analytics & BI",
     icon: BarChart3,
-    skills: ["Power BI", "Excel", "SQL", "DAX", "Data Visualization","Exploratory Data Analysis"],
+    skills: ["SQL", "Power BI", "Excel", "DAX"],
   },
   {
-    title: "Programming",
+    title: "Programming for Data Analysis",
     icon: Code2,
-    skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+    skills: ["Python", "Pandas", "NumPy", "Data Cleaning"],
   },
   {
     title: "Database Systems",
     icon: Database,
-    skills: ["PostgreSQL", "MySQL"],
+    skills: ["PostgreSQL", "MySQL", "Query Optimization"],
   },
   {
-    title: "Other Tools",
+    title: "Business & Analytical Skills",
     icon: Wrench,
-    skills: ["Git", "API Handling"],
+    skills: [
+              "Data Interpretation",
+              "Business Requirement Analysis",
+              "Insight Generation",
+              "KPI & Metric Analysis",
+              "Problem Solving",
+              "Stakeholder Communication"
+            ],
+  },
+  {
+    title: "Data Engineering (Exposure)",
+    icon: GitBranch,
+    skills: ["ETL Fundamentals", "Basic Data Modeling", "Azure (Basics)", "Airflow (Learning)", "Databricks (Learning)", "PySpark (Learning)"],
+  },
+  {
+    title: "Tools & Utilities",
+    icon: Wrench,
+    skills: ["Git", "API Data Handling", "CSV & Excel Data Processing"],
   },
 ];
 
@@ -86,14 +103,16 @@ export default function Skills() {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-4"></div>
 
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            A comprehensive toolkit for solving real-world data challenges
+            A practical skill set focused on data analysis, business intelligence,
+            and insight-driven decision making.
+
           </p>
         </header>
 
         {/* Skill Categories Grid */}
         <main
           role="list"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {SKILL_CATEGORIES.map(({ title, icon: Icon, skills }) => (
             <article
