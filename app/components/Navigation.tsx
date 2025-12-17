@@ -102,9 +102,10 @@ export default function Navigation() {
             animate={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
-            className="text-3xl font-extrabold text-blue-400 tracking-wide"
+            className="text-2xl font-bold tracking-wide text-white focus:outline-none flex items-center gap-1"
+            aria-label="Scroll to home"
           >
-            Vaibhav
+            V.K
           </motion.h1>
         </div> 
         {/* <button
