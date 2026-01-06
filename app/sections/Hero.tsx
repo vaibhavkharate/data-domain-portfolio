@@ -123,7 +123,7 @@ export default function Hero() {
               className="flex flex-wrap gap-4 justify-center lg:justify-start"
             >
               <a
-                href="Images\Resume.Data_Analyst.pdf"
+                href="Images\Vaibhav_Kharate_Resume_Data_Analytics2026.pdf"
                 role="button"
                 aria-label="Download Resume"
                 className="group inline-flex items-center gap-3 px-6 py-3 rounded-lg 
